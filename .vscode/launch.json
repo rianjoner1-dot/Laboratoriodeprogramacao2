@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar Trabalho Lab 2 (main.exe)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\mingw32\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Habilitar pretty printing",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe build active file"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+# Executáveis e arquivos objeto compilados
+*.exe
+*.o
+
+# Configurações de IDE JetBrains
+.idea/
