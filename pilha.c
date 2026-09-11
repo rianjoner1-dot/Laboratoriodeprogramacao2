@@ -2,7 +2,7 @@
 
 Pilha inicializarPilha() {
   Pilha p;
-  p.topo = 0; // Inicializa o topo como 0 indicando que a pilha está vazia
+  p.topo = 0; // comeca no zero pq ta vazia
   return p;
 }
 

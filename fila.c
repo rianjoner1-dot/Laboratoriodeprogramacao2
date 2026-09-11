@@ -3,7 +3,7 @@
 Fila inicializarFila()
 {
     Fila f;
-    f.fim = 0; // Inicializa o fim como 0 indicando que a fila está vazia
+    f.fim = 0; // zera o fim pq ta vazia ainda
     return f;
 }
 
@@ -25,7 +25,7 @@ Fila inserirFila(Fila f, int valor)
 Fila removerFila(Fila f) {
     if (f.fim > 0) {
         printf("\nFila: Removeu %d\n", f.dados[0]);
-        // Como não temos ponteiros, shiftamos os elementos para a esquerda
+        // puxa tudo pra esquerda pq nao tem ponteiro
         for (int i = 0; i < f.fim - 1; i++) {
             f.dados[i] = f.dados[i + 1];
         }

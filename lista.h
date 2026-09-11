@@ -10,5 +10,8 @@ typedef struct {
 Lista inicializarLista();
 Lista inserirLista(Lista l, int valor);
 Lista removerLista(Lista l, int valor);
+Lista bubblesort(Lista l);
+void imprimirLista(Lista l);
+
 
 #endif

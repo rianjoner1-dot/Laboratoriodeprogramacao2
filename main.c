@@ -2,8 +2,6 @@
 #include "TADs.h"
 
 int main() {
-    printf("--- Iniciando Testes ---\n\n");
-
     printf("--- TESTE DA PILHA ---\n");
     Pilha p = inicializarPilha();
     
@@ -17,7 +15,7 @@ int main() {
     printf("\n--- TESTE DA FILA ---\n");
     Fila f = inicializarFila();
     
-    // O laço externo roda 2 vezes para fazer os dois ciclos de (insere 3, remove 3)
+    // roda 2 vezes pra fazer insere 3 e tira 3
     for (int ciclo = 1; ciclo <= 2; ciclo++) {
         for (int i = 1; i <= 3; i++) {
             f = inserirFila(f, i);
@@ -30,7 +28,7 @@ int main() {
     printf("\n--- TESTE DA LISTA ---\n");
     Lista l = inicializarLista();
     
-    // Inserindo 6 elementos dps removendo eles
+    // bota 6 elementos e depois tira tudo
     for (int i = 1; i <= 6; i++) {
         l = inserirLista(l, i * 100);
     }
@@ -38,6 +36,16 @@ int main() {
     for (int i = 1; i <= 6; i++) {
         l = removerLista(l, i * 100);
     }
+
+    printf("\n--- TESTE DO BUBBLE SORT ---\n");
+    // bota tudo baguncado pra testar o bubble
+    l = inserirLista(l, 40);
+    l = inserirLista(l, 10);
+    l = inserirLista(l, 50);
+    l = inserirLista(l, 20);
+    l = inserirLista(l, 30);
+
+    l = bubblesort(l);
 
     printf("\nTestes finalizados!\n");
     return 0;
